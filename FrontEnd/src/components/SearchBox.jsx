@@ -12,17 +12,26 @@ function SearchBox() {
     };
 
     return (
-        <div className="input-group my-4">
-        <input
-            type="text"
-            className="form-control"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Buscar productos..."
-        />
-        <button className="btn btn-primary" onClick={handleSearch}>
-            Buscar
-        </button>
+        <div className="d-flex flex-column align-items-center my-4">
+            
+            {/* Campo de texto para la búsqueda */}
+            <input
+                type="text"
+                className="form-control mb-3"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Buscar ..."
+                style={{ maxWidth: '300px', textAlign: 'center' }}
+            />
+
+            {/* Botón de búsqueda estilizado */}
+            <button
+                className="btn"
+                onClick={handleSearch}
+                style={{ backgroundColor: 'ORANGE', color: 'WHITE', fontWeight: 'bold' }}
+            >
+                BUSCAR PRODUCTO
+            </button>
         </div>
     );
 }
