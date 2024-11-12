@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'; 
 import { useParams } from 'react-router-dom';
-import { v4 as uuidv4 } from 'uuid'; // Importar uuid para generar IDs únicos
+import { v4 as uuidv4 } from 'uuid';
 import api from '../services/api';
 import RatingStars from '../components/RatingStars';
 import SearchBox from '../components/SearchBox';
