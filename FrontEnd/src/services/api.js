@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-// Configuración de Axios para las solicitudes HTTP hacia el backend
 const api = axios.create({
-  baseURL: 'http://localhost:3001/api', // Cambia a la URL de tu backend cuando esté en producción
+  baseURL: 'https://examen-parcial2.onrender.com/api',
 });
 
 export const searchProducts = async (query) => {
